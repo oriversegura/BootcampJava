@@ -1,0 +1,3 @@
+int inicio(int resultados, int página) {
+return resultados * (página - 1);
+}
