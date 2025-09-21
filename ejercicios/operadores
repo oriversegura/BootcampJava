@@ -1,3 +1,55 @@
 int inicio(int resultados, int página) {
 return resultados * (página - 1);
 }
+double cobro(int minutos){
+    double tarifaPorMinuto = 10.0;
+    double cobroMinimo = 100.0;
+    double cobroMaximo = 3000.00;
+    double cobroCalculado = minutos * tarifaPorMinuto;
+    return Math.min(Math.max(cobroCalculado, cobroMinimo), cobroMaximo);
+}
+boolean validar(int a, int b, int c){
+    return (a >= 0) && (a < b) && (b < c);
+}
+boolean validarMultiploDe7(int n){
+    return n > 0 && n % 7 == 0 && n < 1000;
+}
+double tercerAngulo(double a, double b){
+    return 180 - (a + b);
+}
+int diferenciaDeCuadrados(int a, int b){
+    return (a * a) - (b * b);
+}
+boolean esPar(int n){
+    return (n % 2 == 0) ? true : false;
+}
+boolean esImpar(int n){
+    return !esPar(n);
+}
+String signo(int n){
+    return (n >= 0) ? "no negativo" : "negativo";
+}
+boolean unicoDigito(int n){
+    return (n > 0 ) && (n < 10);
+    // huecos rellenados con la logica correspondiente, mayor a 0 y menor a 10
+}
+int ultimoDigito(int n){
+    return n % 10;
+    //se rellena el espacio con simbolo de resto
+}
+int truncado(int n){
+    return n / 10;
+// se rellena el espacio en blanco con el simbolo de division
+}
+boolean positivoMenorDe20(int numero){
+    //se valida dos veces el parametro como solucion
+    return (numero > 0 && numero < 20);
+}
+int suma(int numero1, int numero2){
+    return numer1 + numero2;
+    //se ponen los parametros en orden como solucion
+}
+int multiplicacion(int numero1, int numero2){
+    //se cambian los strings por numeros por que los strings no se multiplican
+    return numero1 * numero2;
+}
