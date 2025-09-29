@@ -1,3 +1,18 @@
+Math.pow(1.0 - 1.0, 2)
+duplicar(20.5)
+mod(3,2)
+mod(4,2)
+diferenciaDeCuadrados(3,4)
+diferenciaDeCuadrados(2,2)
+Math.pow(1.0 - 1.0, 2)
+distanciaDosPuntos(0.0, 0.0, 1.0, 1.0)
+farenheitACelcius(60.0)
+farenheitACelcius(30.0)
+farenheitACelcius(32.0)
+gravedadSuperficial(5.972e24, 6.378e6)
+gravedadSuperficialDeLaTierra()
+pesoEnMarte(80)
+pesoEnMarte(65)
 duplicar(20.5)
 mod(3,2)
 mod(4,2)
@@ -68,3 +83,10 @@ double pesoEnMarte(double pesoEnLaTierra){
 }
 pesoEnMarte(80)
 pesoEnMarte(65)
+boolean esTriangulo(double ladoA, double ladoB, double ladoC){
+    double ladoMasLargo = Math.max(ladoA, Math.max(ladoB, ladoC));
+    double sumaDeOtrosLados = (ladoA + ladoB + ladoC) - ladoMasLargo;
+    return sumaDeOtrosLados > ladoMasLargo;
+}
+esTriangulo(3.0, 4.0, 5.0)
+esTriangulo(17.0, 10.0, 7.0)
