@@ -1,4 +1,23 @@
 Math.pow(1.0 - 1.0, 2)
+Math.pow(1.0 - 1.0, 2)
+Math.pow(1.0 - 1.0, 2)
+duplicar(20.5)
+mod(3,2)
+mod(4,2)
+diferenciaDeCuadrados(3,4)
+diferenciaDeCuadrados(2,2)
+Math.pow(1.0 - 1.0, 2)
+distanciaDosPuntos(0.0, 0.0, 1.0, 1.0)
+farenheitACelcius(60.0)
+farenheitACelcius(30.0)
+farenheitACelcius(32.0)
+gravedadSuperficial(5.972e24, 6.378e6)
+gravedadSuperficialDeLaTierra()
+pesoEnMarte(80)
+pesoEnMarte(65)
+esTriangulo(3.0, 4.0, 5.0)
+esTriangulo(17.0, 10.0, 7.0)
+Math.pow(1.0 - 1.0, 2)
 duplicar(20.5)
 mod(3,2)
 mod(4,2)
@@ -90,3 +109,36 @@ boolean esTriangulo(double ladoA, double ladoB, double ladoC){
 }
 esTriangulo(3.0, 4.0, 5.0)
 esTriangulo(17.0, 10.0, 7.0)
+promedio(20, 25
+)
+promedio(20, 25)
+promedio(20, 25)
+promedio(20, 23)
+promedio(20, 23)
+promedio(20, 23)
+promedio(20, 21)
+promedio(20, 21)
+promedio(20, 21)
+promedio(20, 21)
+promedio(20, 21)
+promedio(20, 21)
+promedio(20, 20)
+promedio(20, 21)
+promedio(20, 21)
+promedio(20.0, 21.0)
+promedio(11, 16)
+promedio(11, 16)
+promedio(11, 16)
+double promedio(int edadMenor, int edadMayor) {
+return (edadMenor + edadMayor) / 2.0;
+}
+promedio(11, 16)
+leyCosenos(3.0, 4.0, 90.0)
+leyCosenos(11.0, 11.0, 60.0)
+double leyCosenos(double a, double b, double gammaGrad){
+    var gammaRad = Math.toRadians(gammaGrad);
+    var result = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) - 2 * a * b * Math.cos(gammaRad));
+return result;
+}
+leyCosenos(11.0, 11.0, 60.0)
+leyCosenos(3.0, 4.0, 90.0)
