@@ -1,0 +1,70 @@
+duplicar(20.5)
+mod(3,2)
+mod(4,2)
+diferenciaDeCuadrados(3,4)
+diferenciaDeCuadrados(2,2)
+Math.pow(1.0 - 1.0, 2)
+distanciaDosPuntos(0.0, 0.0, 1.0, 1.0)
+farenheitACelcius(60.0)
+farenheitACelcius(30.0)
+farenheitACelcius(32.0)
+gravedadSuperficial(5.972e24, 6.378e6)
+double duplicar(double a){
+    var foo = a * 2;
+    return foo;
+}
+duplicar(20.5)
+int mod(int p, int q){
+    var d = p / q;
+    var r = d * q;
+    var m = p - r;
+    return m; 
+}
+mod(3,2)
+mod(4,2)
+int diferenciaDeCuadrados(int a, int b){
+    var cuadradoDeA = a * a;
+    var cuadradoDeB = b * b;
+    var diferenciaDeCuadrados = cuadradoDeA - cuadradoDeB;
+    return diferenciaDeCuadrados;
+}
+diferenciaDeCuadrados(3,4)
+diferenciaDeCuadrados(2,2)
+distanciaDosPuntos(0.0, 0.0, 1.0, 1.0)
+distanciaDosPuntos(0.0, 0.0, 1.0, 1.0)
+Math.pow(1.0 - 1.0, 2)
+distanciaDosPuntos(0.0, 0.0, 1.0, 1.0)
+double distanciaDosPuntos(double x1, double y1, double x2, double y2){
+    var d = Math.sqrt((Math.pow(x2 - x1, 2)) + (Math.pow(y2 - y1, 2)));
+    return d;
+
+}
+distanciaDosPuntos(0.0, 0.0, 1.0, 1.0)
+farenheitACelcius(60.0)
+farenheitACelcius(60.0)
+double farenheitACelcius(double F){
+    var C = (F - 32) * 5 / 9;
+    return C;
+}
+farenheitACelcius(60.0)
+farenheitACelcius(30.0)
+farenheitACelcius(32.0)
+double gravedadSuperficial(double masa, double radio){
+    var G = 6.67430e-11;
+    var result = (G * masa) / Math.pow(radio, 2);
+    return result;
+}
+gravedadSuperficial(5.972e24, 6.378e6)
+double gravedadSuperficialDeLaTierra(){
+    return gravedadSuperficial(5.972e24, 6.378e6);
+}
+gravedadSuperficialDeLaTierra()
+double gravedadSuperficialMarte(){
+    return gravedadSuperficial(6.421e23, 3.3972e6);
+}
+double pesoEnMarte(double pesoEnLaTierra){
+    var pesoEnMarte = (gravedadSuperficialMarte() / gravedadSuperficialDeLaTierra()) * pesoEnLaTierra;
+    return pesoEnMarte;
+}
+pesoEnMarte(80)
+pesoEnMarte(65)
