@@ -1,0 +1,48 @@
+empiezaConMinúscula("manzana")
+empiezaConMinúscula("Manzana")
+String pluralizar(int conteo, String s) {
+return (conteo < 2) ? s : s.format("%d %ss", conteo, s);
+}
+pluralizar(2, "codigo")
+boolean esVocal(char letra) {
+var letraMinúscula = Character.toLowerCase(letra);
+return "aeiou".contains(Character.toString(letraMinúscula));
+}
+esVocal('a')
+esVocal('x')
+String titleCase(String texto) {
+var primeraLetra = texto.substring(0, 1);
+var restoDelTexto = texto.substring(1);
+return String.format("%S%s", primeraLetra, restoDelTexto.toLowerCase());
+}
+titleCase("java")
+titleCase("JAVA")
+titleCase("Java")
+boolean terminaEnS(String texto) {
+var últimoCaracter = texto.charAt(texto.length() - 1);
+return (últimoCaracter == 's') || (últimoCaracter == 'S');
+}
+terminaEnS("miercoles")
+terminaEnS("sabado")
+boolean empiezaConMinúscula(String s) {
+return Character.isLowerCase(s.charAt(0));
+}
+esPalindrome("ab")
+esPalindrome("aa")
+esPalindrome("bb")
+esPalindrome("Aa")
+boolean esPalindrome(String palindrome){
+   var firstChar = palindrome.toLowerCase().charAt(0);
+    var lastChar = palindrome.toLowerCase().charAt(palindrome.length() - 1);
+    return firstChar == lastChar;
+}
+esPalindrome("Aa"
+)
+esPalindrome("Aa")
+esPalindrome("Ca")
+boolean esExterno(String enlace){
+  return  enlace.contains("http") || enlace.contains("https");
+}
+esExterno("https://www.java.com")
+esExterno("http://dont-go.com")
+esExterno("/dont-go.com")
