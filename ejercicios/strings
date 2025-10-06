@@ -1,3 +1,18 @@
+pluralizar(2, "codigo")
+esVocal('a')
+esVocal('x')
+titleCase("java")
+titleCase("JAVA")
+titleCase("Java")
+terminaEnS("miercoles")
+terminaEnS("sabado")
+esPalindrome("Aa"
+)
+esPalindrome("Aa")
+esPalindrome("Ca")
+esExterno("https://www.java.com")
+esExterno("http://dont-go.com")
+esExterno("/dont-go.com")
 empiezaConMinúscula("manzana")
 empiezaConMinúscula("Manzana")
 String pluralizar(int conteo, String s) {
@@ -46,3 +61,49 @@ boolean esExterno(String enlace){
 esExterno("https://www.java.com")
 esExterno("http://dont-go.com")
 esExterno("/dont-go.com")
+String extension(String ruta){
+    var punto = ruta.lastIndexOf(".");
+    var barra = Math.max(ruta.lastIndexOf("/"), ruta.lastIndexOf("//"));
+    return punto > barra && punto != -1 ? ruta.substring(punto + 1) : "";
+}
+extension("debug.sh")
+extension("/path/to/debug.sh")
+extension("the.dot/file.java")
+extension("no-extension")
+String dominio(String url){
+    var protocolo = url.substring(8);
+    var barra = protocolo.indexOf('/');
+    return barra != -1 ? protocolo.substring(0, barra) : protocolo;
+}
+dominio("https://www.java.com/en/")
+dominio("https://jcp.org")
+String domingoDePascua(int año){
+    var a = año % 19;
+var b = año / 100;
+var c = año % 100;
+var d = b / 4;
+var e = b % 4;
+var g = ((8 * b) + 13) / 25;
+var h = ((19 * a) + b - d - g + 15) % 30;
+var i = c / 4;
+var k = c % 4;
+var l = (32 + (2 * e) + (2 * i) - h - k) % 7;
+var m = (a + (11 * h) + (19 * l)) / 433;
+// n es el número del mes, 3 = marzo, 4 = abril
+var n = (h + l - (7 * m) + 90) / 25;
+// p es el día del mes
+var p = (h + l - (7 * m) + (33 * n) + 19) % 32;
+    return String.format("%04d/%02d/%02d", año, n, p);
+}
+domingoDePascua(2024)
+domingoDePascua(2025)
+hexString(0,0,0)
+hexString(255,255,255)
+hexString(0, 0, 0)
+hexString(12, 15, 77)
+String hexString(int r, int g, int b){
+    return String.format("%02X%02X%02X", r, g, b);
+}
+hexString(0, 0, 0)
+hexString(255,255,255)
+hexString(12, 15, 77)
