@@ -11,7 +11,7 @@ public class Funciones {
 	}
 	
 	public static String konnichiwa(String dare){
-	    return String.format("こんにちは %s", dare);
+	    return String.format("こんにちは  %s", dare);
 	}
 
 }

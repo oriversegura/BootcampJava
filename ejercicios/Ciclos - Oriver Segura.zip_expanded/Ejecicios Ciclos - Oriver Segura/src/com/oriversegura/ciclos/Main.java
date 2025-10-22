@@ -1,5 +1,7 @@
 package com.oriversegura.ciclos;
 
+import com.oriversegura.ciclos.utils.PatternGenerator;
+
 public class Main {
 
 	public static void main(String[] args) {
