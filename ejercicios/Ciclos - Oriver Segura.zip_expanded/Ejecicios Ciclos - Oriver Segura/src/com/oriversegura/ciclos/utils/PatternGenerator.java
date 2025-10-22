@@ -33,18 +33,13 @@ public class PatternGenerator {
 
 			for (int j = 1; j <= rango; j++) {
 
-				builder.append('|');
-				builder.append('(');
-				builder.append(i);
-				builder.append(',');
-				builder.append(' ');
-				builder.append(j);
-				builder.append(')');
+				builder.append('|').append('(').append(i).append(", ").append(j).append(')');
 
 			}
-
 		}
+
 		builder.append('|');
+
 		return builder.toString();
 
 	}
