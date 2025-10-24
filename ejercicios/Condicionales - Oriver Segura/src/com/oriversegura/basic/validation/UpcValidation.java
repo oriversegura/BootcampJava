@@ -1,5 +1,7 @@
 package com.oriversegura.basic.validation;
 
+import org.hamcrest.core.SubstringMatcher;
+
 public class UpcValidation {
 	
 //	E6.2
@@ -26,6 +28,7 @@ public class UpcValidation {
 //	UPC válido verificando el dígito de verificación como se explica en las reglas anteriores.
 	
 	public static boolean upcVálido(String upc) {
+		
 		
 		
 		

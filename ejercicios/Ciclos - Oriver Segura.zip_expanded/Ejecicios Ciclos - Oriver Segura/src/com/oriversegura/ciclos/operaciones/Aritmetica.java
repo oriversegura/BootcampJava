@@ -43,7 +43,7 @@ public class Aritmetica {
 		
 		for (int i = 1; i <= numero; i++) {
 			 
-			suma += 1 / (double) i;	
+			suma += 1.0 / (double) i;	
 			
 		}
 		return suma; 

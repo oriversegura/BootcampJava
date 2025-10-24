@@ -40,16 +40,21 @@ public class StringUtils {
 	}
 
 	// Ejercicio E5.7
+	
+	
+	public static int caracteresIniciales(String id, char c) {
+		var indice = 0;
+
+
+		while (indice < id.length() && id.charAt(indice) == c) {
+			indice++;
+		}
+		return indice;
+
+	}
 
 	public static int cerosIniciales(String id) {
-		var suma = 0;
-		var i = 0;
-
-		while (id.charAt(i) == '0') {
-			i++;
-			suma++;
-		}
-		return suma;
+		return caracteresIniciales(id, '0');
 
 	}
 
