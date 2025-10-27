@@ -1,9 +1,13 @@
 package com.oriversegura.basic.validation;
 
+import java.lang.invoke.VarHandle;
+
 import org.hamcrest.core.SubstringMatcher;
 
+import com.sun.source.tree.WhileLoopTree;
+
 public class UpcValidation {
-	
+
 //	E6.2
 //	Los dígitos de verificación son un mecanismo simple para detectar errores cuando se digita un
 //	número. Por ejemplo supongamos que generamos un identificador "123", luego aplicamos una
@@ -26,18 +30,34 @@ public class UpcValidation {
 //	es 10 - M
 //	Crea una función que reciba un número dado como una cadena y verifique si es un número
 //	UPC válido verificando el dígito de verificación como se explica en las reglas anteriores.
-	
-	public static boolean upcVálido(String upc) {
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		return true;
-	}
 
+	public static boolean upcVálido(String upc) {
+		var sumaDigitoImpar = 0;
+		var sumaDigitoPar = 0;
+		var ultimoDigito = upc.charAt(upc.length() - 1);
+
+		for (int indice = 0; indice < upc.length() - 1; indice++) {
+			char c = upc.charAt(indice);
+			if (indice % 2 == 0) {
+				sumaDigitoImpar += Character.getNumericValue(c);
+			} else {
+				sumaDigitoPar += Character.getNumericValue(c);
+			}
+		}
+
+		var sumaTotal = (sumaDigitoImpar * 3) + sumaDigitoPar;
+
+		var modulo = sumaTotal % 10;
+
+		var digitoVerificacion = 0;
+
+		if (modulo == 0) {
+			digitoVerificacion = 0;
+		} else {
+			digitoVerificacion = 10 - modulo;
+		}
+
+		return digitoVerificacion == Character.getNumericValue(ultimoDigito);
+
+	}
 }
