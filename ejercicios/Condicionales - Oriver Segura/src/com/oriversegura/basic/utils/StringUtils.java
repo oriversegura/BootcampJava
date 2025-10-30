@@ -12,8 +12,20 @@ public class StringUtils {
 	public static String snakeCaseToCamelCase(String s) {
 		var builder = new StringBuilder();
 
-		return builder.toString();
+		for (int letra = 0; letra < s.length(); letra++) {
 
+			if (s.charAt(letra) == '_') {
+				builder.delete(letra, letra++);
+
+				builder.append((s.toUpperCase().charAt(letra)));
+
+			} else {
+				builder.append(s.charAt(letra));
+			}
+
+		}
+
+		return builder.toString();
 	}
 
 	public static String camelCaseToSnakeCase(String s) {
