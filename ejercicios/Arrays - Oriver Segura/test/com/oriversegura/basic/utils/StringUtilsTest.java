@@ -1,0 +1,26 @@
+package com.oriversegura.basic.utils;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+public class StringUtilsTest {
+	
+	
+	@Test
+	@DisplayName("Retorna 1 al pasar el arreglo {abc, casa, cc}")
+	void másLargoTest1() {
+		assertEquals(1, másLargo(new String[] {"abc", "casa", "cc"}));
+	}
+	
+	
+	@Test
+	@DisplayName("Retorna 1 al pasar el arreglo {abc, casa, cc}")
+	void másLargoTest2() {
+		assertEquals(0, másLargo(new String[] {"a", "b", "c"}));
+	}
+	
+	
+	
+	
+
+}
