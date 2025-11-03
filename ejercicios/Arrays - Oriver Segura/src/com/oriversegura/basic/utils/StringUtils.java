@@ -8,13 +8,18 @@ public class StringUtils {
 //	caracteres devuelve el que tenga el menor índice
 
 	public static int másLargo(String[] data) {
-		var contador = 0;
-		
-		
-		
-		
-		
-		return contador;
-	}
+		var indiceMasLargo = 0;
+		var longitudMaxima = data[0].length();
 
+		for (var i = 1; i < data.length; i++) {
+			var longitudActual = data[i].length();
+			
+			if (longitudActual > longitudMaxima) {
+				longitudMaxima = longitudActual;
+				indiceMasLargo = i;
+			}
+
+		}
+		return indiceMasLargo;
+	}
 }
