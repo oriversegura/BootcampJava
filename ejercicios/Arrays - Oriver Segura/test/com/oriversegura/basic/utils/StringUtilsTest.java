@@ -14,9 +14,21 @@ public class StringUtilsTest {
 	}
 
 	@Test
-	@DisplayName("Retorna 1 al pasar el arreglo {abc, casa, cc}")
+	@DisplayName("Retorna 0 al pasar el arreglo {a, b, c}")
 	void másLargoTest2() {
 		assertEquals(0, StringUtils.másLargo(new String[] { "a", "b", "c" }));
 	}
-
+	
+	
+	@Test
+	@DisplayName("Retorna true al buscar b en {a, b, c}")
+	void contieneTest1(){
+		assertEquals(true, StringUtils.contiene(new String[] {"a", "b", "c"}, "b"));
+	}
+	
+	@Test
+	@DisplayName("Retorna false al buscar 1 en {a, b, c}")
+	void contieneTest2() {
+	assertEquals(false, StringUtils.contiene(new String[] {"a", "b", "c"}, "1"));
+	}
 }

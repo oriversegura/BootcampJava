@@ -1,5 +1,7 @@
 package com.oriversegura.basic.utils;
 
+
+
 public class StringUtils {
 
 //	E7.1
@@ -22,4 +24,22 @@ public class StringUtils {
 		}
 		return indiceMasLargo;
 	}
+	
+	
+//	E7.2
+//	Escribe una función contiene() que dado un arreglo de String y un String, retorne verdadero si
+//	ese String está en el arreglo y falso en caso contrario.
+	
+	public static boolean contiene(String[] arreglo, String patron) {
+		
+		for(int i = 0; i < arreglo.length; i++){
+			if (arreglo[i] == patron)
+				return true;
+			
+		}
+		return false;
+	}
+	
+	
+	
 }
