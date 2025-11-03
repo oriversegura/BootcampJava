@@ -1,5 +1,7 @@
 package com.oriversegura.basic.operations;
 
+import java.util.Arrays;
+
 public class Aritmetics {
 
 //	E7.3
@@ -18,27 +20,29 @@ public class Aritmetics {
 		}
 		return -1;
 	}
-	
+
 //	E7.4
 //	Escribe una función operar() reciba un arreglo de ints y retorne un nuevo arreglo de ints con los
 //	mismos elementos del arreglo original después de multiplicarlos por 3 y sumarles 1. Por ejemplo
 //	si en el arreglo original está el elemento 2, en el arreglo retornado en esa posición debe
 //	aparecer el elemento 7
-	
-	public static int[] operar(int[] numeros) {
-	
-		
-		
-		
-		
-		return
+
+	public static int[] operar(int[] datos) {
+		var nuevoDatos = new int[datos.length];
+
+		for (var i = 0; i < datos.length; i++) {
+
+			var valorOriginal = datos[i];
+
+			if (valorOriginal == 0) {
+				nuevoDatos[i] = 0;
+			} else {
+				nuevoDatos[i] = valorOriginal * 3 + 1;
+			}
+
+		}
+
+		return nuevoDatos;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
