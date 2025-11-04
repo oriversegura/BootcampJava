@@ -44,24 +44,34 @@ public class Aritmetics {
 
 		return nuevoDatos;
 	}
-	
-	
+
 //	E7.6
 //	Escribe una función segundoMayor(), que reciba un arreglo de más de un número entero y
 //	devuelva el segundo elemento mayor.
 
-	
 	public static int segundoMayor(int[] datos) {
-		
-		
-		
-		
-		
-		
-		
-		return 0;
+		var mayor = datos[0];
+		var segundoMayor = datos[1];
+
+		// invertimos los valores en caso de ser necesario
+		if (mayor < segundoMayor) {
+			var temp = mayor;
+			mayor = segundoMayor;
+			segundoMayor = temp;
+		}
+
+		for (int i = 2; i < datos.length; i++) {
+
+			if (datos[i] > mayor) {
+				segundoMayor = mayor;
+				mayor = datos[i];
+
+			} else if (datos[i] > segundoMayor && datos[i] < mayor) {
+				segundoMayor = datos[i];
+			}
+		}
+
+		return segundoMayor;
 	}
-	
-	
 
 }
