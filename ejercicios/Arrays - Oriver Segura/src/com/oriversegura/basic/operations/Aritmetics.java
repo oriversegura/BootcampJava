@@ -44,5 +44,24 @@ public class Aritmetics {
 
 		return nuevoDatos;
 	}
+	
+	
+//	E7.6
+//	Escribe una función segundoMayor(), que reciba un arreglo de más de un número entero y
+//	devuelva el segundo elemento mayor.
+
+	
+	public static int segundoMayor(int[] datos) {
+		
+		
+		
+		
+		
+		
+		
+		return 0;
+	}
+	
+	
 
 }
