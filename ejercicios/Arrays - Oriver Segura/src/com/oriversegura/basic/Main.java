@@ -1,8 +1,5 @@
 package com.oriversegura.basic;
 
-import com.oriversegura.basic.operations.Aritmetics;
-import com.oriversegura.basic.utils.StringUtils;
-
 public class Main {
 
 	public static void main(String[] args) {

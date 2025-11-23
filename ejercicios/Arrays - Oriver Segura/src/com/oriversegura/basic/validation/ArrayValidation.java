@@ -1,6 +1,5 @@
 package com.oriversegura.basic.validation;
 
-import java.util.Arrays;
 
 public class ArrayValidation {
 
